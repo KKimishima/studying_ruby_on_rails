@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  get 'users/index'
+  get 'users/show'
   # resourcesはrestの一通りのルーティング作製
   # onlyでホワイトリスト的に追加使いできる
   # 例 resources :articles, only: [:index, :show]
 
   resources :articles
-  resources :users
   get 'home/index'
 
   # この様にルーティングもデキる
