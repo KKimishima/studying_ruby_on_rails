@@ -19,5 +19,13 @@ Rails.application.routes.draw do
 
   # ルートの名前を変える際は
   # get '/hello', to: 'application#hello' as foo
+
+  # ネームスペースを使うこともデキる
+  namespace :admin do
+    # 入力制限もかけられる
+    resources :users, conditions: {
+        id: /[a-z]{1,5}/
+    }
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
