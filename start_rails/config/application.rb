@@ -29,5 +29,15 @@ module StartRails
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # 設定の追記
+    # 時間の設定
+    config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
+
+    # i18nの設定
+    # 言語を日本ご設定する
+    config.i18n.available_locales = [:en, :ja]
+    config.i18n.default_locale = :ja
   end
 end
