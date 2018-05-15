@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/index'
-  get 'users/show'
+
+  # restに書き換え
+  # get 'users/index'
+  # get 'users/show'
+  resources :users, only: [:index, :show]
+
   # resourcesはrestの一通りのルーティング作製
   # onlyでホワイトリスト的に追加使いできる
   # 例 resources :articles, only: [:index, :show]
