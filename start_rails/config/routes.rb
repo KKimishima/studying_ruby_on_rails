@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'book/index'
   # restに書き換え
   # get 'users/index'
   # get 'users/show'
