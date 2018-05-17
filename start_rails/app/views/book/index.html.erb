@@ -1,9 +1,32 @@
 <!--本文になる部分-->
 <h1>Book#index</h1>
 <p>Find me in app/views/book/index.html.erb</p>
+<%= flash[:notice] %>
+<p>
+  <%= demo_helper 'demo' %>
+</p>
+<p>
+  <%= link_to 'link_toのヘルパー', 'https://google.co.jp' %>
+</p>
+<p>
+  <%=	 image_tag '/demo.png', alt: 'ファビコン' %>
+</p>
+
+<%=	 form_tag('/book',method: 'get') do %>
+  <%=	 label_tag(:q,'検索フォーム') %>
+  <%=	 text_field_tag(:q) %>
+  <%=	 submit_tag('検索') %>
+<%	 end %>
+
+<%=	 form_with(url: '/book/index',local: true) do |f|%>
+  <%=	 label_tag(:q,'検索フォーム') %>
+  <%=	 text_field_tag(:q) %>
+  <%=	 submit_tag('検索') %>
+<%	 end %>
+
 <!--部分的に取り込む部分-->
 <%= render 'book/book_part' %>
-<%=	 render 'layouts/book_footer2' %>
+<%= render 'layouts/book_footer2' %>
 
 <!--レイアウトに差し込む部分-->
 <% content_for :footer do %>
