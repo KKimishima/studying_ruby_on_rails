@@ -19,6 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 # セッションストアと利用するためにredisをインストール
 gem 'redis-rails'
 
+# XSS脆弱性を防ぐ
+gem 'secure_headers', '~> 6.0'
+
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
