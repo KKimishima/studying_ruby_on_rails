@@ -1,0 +1,61 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/models/article.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        1,
+        2,
+        1,
+        null,
+        null
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/helpers/application_helper.rb": [
+        0,
+        0
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Volumes/data/Repo/studying_ruby_on_rails/rspec_sample/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1527168868
+  }
+}

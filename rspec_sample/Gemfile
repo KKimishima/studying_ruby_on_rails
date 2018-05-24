@@ -43,6 +43,7 @@ group :development, :test do
   gem 'pry-rails', '~> 0.3.6'
   gem 'pry-coolline', '~> 0.2.5'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'simplecov', '~> 0.16.1'
 end
 
 group :development do
