@@ -54,4 +54,22 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # テストのためのDB初期化設定
+  config.before(:suite) do
+    # テスト実行時は、transactionを使用
+    DatabaseCleaner.strategy = :transaction
+    # テスト実行前にクリーニング
+    DatabaseCleaner.clean_with(:transaction)
+  end
+  # サンプル実行後の処理を記述
+  config.around(:each) do |example|
+    # クリーニングしてから実行を指示
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+
+  # FactoryBot作製設定
+  config.include FactoryBot::Syntax::Methods
 end
