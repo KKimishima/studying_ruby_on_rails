@@ -29,5 +29,7 @@ module SampleApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    # 暗号機能有効
+    config.read_encrypted_secrets = true
   end
 end
