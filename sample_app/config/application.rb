@@ -31,5 +31,13 @@ module SampleApp
     config.generators.system_tests = nil
     # 暗号機能有効
     config.read_encrypted_secrets = true
+
+    #  ジェネレートコマンドでの除外設定追加
+    config.generators  do |g|
+      g.skip_routes true
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+    end
   end
 end
