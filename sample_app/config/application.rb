@@ -39,5 +39,8 @@ module SampleApp
       g.javascripts false
       g.helper false
     end
+
+    # sidekiqの非同期設定有効
+    config.active_job.queue_adapter = :sidekiq
   end
 end
